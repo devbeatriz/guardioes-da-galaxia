@@ -14,16 +14,16 @@
     <div id="images">
       <img src="./assets/members/peter-quill.png" alt="">
       <img src="./assets/members/gamora.png" alt="">
-      <img src="./assets/members/drax.png" alt="">
-      <img src="./assets/members/mantis.png" alt="">
-      <img src="./assets/members/rocket.png" alt="">
-      <img src="./assets/members/groot.png" alt="">
+      <img src="./assets/members/drax.png" loading="lazy">
+      <img src="./assets/members/mantis.png" loading="lazy">
+      <img src="./assets/members/rocket.png" loading="lazy">
+      <img src="./assets/members/groot.png" loading="lazy">
     </div>
   </div>
 
   <div>
-    <button type="button" onclick="navigationMember(-1)">voltar</button>
-    <button type="button" onclick="navigationMember(+1)">avançar</button>
+    <button type="button" onclick="navigationMember(-1)" id="button__prev" disabled>voltar</button>
+    <button type="button" onclick="navigationMember(+1)" id="button__next">avançar</button>
   </div>
   <script src="./script/index.js"></script>
   <script src="./script/changeName.js"></script>

@@ -10,6 +10,11 @@ const members = [
 let activeMember = 0
 const images = document.getElementById('images')
 
+function chageStatusButton() {
+  const prev = document.getElementById('button__prev')
+  const next = document.getElementById('button__next')
+}
+
 function navigationMember(direction) {
   activeMember = activeMember + direction
 

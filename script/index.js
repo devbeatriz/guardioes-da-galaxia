@@ -10,9 +10,14 @@ const members = [
 let activeMember = 0
 const images = document.getElementById('images')
 
-function chageStatusButton() {
+function changeStatusButtons() {
   const prev = document.getElementById('button__prev')
+  const isFirst =  activeMember == 0
+  prev.disabled =  isFirst
+
   const next = document.getElementById('button__next')
+  const isLast = activeMember == members.length - 1
+  next.disabled = isLast
 }
 
 function navigationMember(direction) {
@@ -22,5 +27,7 @@ function navigationMember(direction) {
 
   console.log(activeMember, member);
 
-  images.style.transform = `translateY(${-100 * activeMember}vh)` 
+  images.style.transform = `translateY(${-100 * activeMember}vh)`
+
+  changeStatusButtons()
 }

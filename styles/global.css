@@ -1,6 +1,7 @@
 @import url('./background.css');
 @import url('./header.css');
 @import url('./main.css');
+@import url('./font.css');
 
 * {
   padding: 0;

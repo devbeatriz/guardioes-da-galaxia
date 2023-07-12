@@ -3,6 +3,16 @@
   position: relative;
 }
 
+.background::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--image-shadow);
+  z-index: 1;
+}
+
 #images {
   position: absolute;
   transition: all 0.8s;

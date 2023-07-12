@@ -2,6 +2,7 @@
 @import url('./header.css');
 @import url('./main.css');
 @import url('./font.css');
+@import url('./navigation.css');
 
 * {
   padding: 0;

@@ -1,0 +1,53 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 8px;
+  z-index: 10;
+  border: 0;
+  background: transparent;
+}
+
+#menu:hover {
+  cursor: pointer;
+}
+
+#menu span {
+  height: 2px;
+  background: var(--text);
+  border-radius: 8px;
+  transition: all 0.4s;
+}
+
+#menu span:nth-child(1) {
+  width: 32px;
+}
+
+#menu span:nth-child(2) {
+  width: 40px;
+}
+
+#menu span:nth-child(3) {
+  width: 24px;
+}
+
+#menu.active span:nth-child(2) {
+  opacity: 0;
+  width: 0px;
+}
+
+#menu.active span:nth-child(1) {
+  width: 32px;
+  transform: rotate(-45deg) translate(-7px, 5px);
+}
+
+#menu.active span:nth-child(3) {
+  width: 32px;
+  transform: rotate(45deg) translate(-8px, -7px);
+}

@@ -1,4 +1,7 @@
 @import url('./background.css');
+@import url('./header.css');
+@import url('./main.css');
+
 * {
   padding: 0;
   margin: 0;
@@ -22,4 +25,13 @@ body {
   overflow: hidden;
   color: var(--text);
   font-family: 'Rubik', sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  padding: 48px 80px 80px;
 }

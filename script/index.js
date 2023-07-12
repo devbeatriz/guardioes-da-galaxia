@@ -9,6 +9,7 @@ const members = [
 
 let activeMember = 0
 const images = document.getElementById('images')
+const menu = document.getElementById('menu')
 
 function changeStatusButtons() {
   const prev = document.getElementById('button__prev')
@@ -30,4 +31,8 @@ function navigationMember(direction) {
   images.style.transform = `translateY(${-100 * activeMember}vh)`
 
   changeStatusButtons()
+}
+
+function changeMenu() {
+  menu.classList.toggle('active')
 }

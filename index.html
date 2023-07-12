@@ -21,10 +21,29 @@
     </div>
   </div>
 
-  <div>
-    <button type="button" onclick="navigationMember(-1)" id="button__prev" disabled>voltar</button>
-    <button type="button" onclick="navigationMember(+1)" id="button__next">avançar</button>
+  <div class="app">
+    <header>
+      <img src="assets/logo.png" alt="">
+
+      <button type="button" id="menu" onclick="changeMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <h1>Peter Quill</h1>
+
+      <div>
+        <button type="button" onclick="navigationMember(-1)" id="button__prev" disabled>voltar</button>
+        <button type="button" onclick="navigationMember(+1)" id="button__next">avançar</button>
+      </div>
+    </main>
+
   </div>
+
+
   <script src="./script/index.js"></script>
   <script src="./script/changeName.js"></script>
 </body>
